@@ -1,194 +1,430 @@
- url=https://github.com/ketukini55/Navarro-Family-Roofing-LLC/blob/main/index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navarro Family Roofing LLC - Professional Roofing Services</title>
+    <title>Navarro Family Roofing LLC - Premium Roofing Services</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- ANIMATED BACKGROUND -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
     <!-- NAVIGATION HEADER -->
-    <header>
-        <div class="container">
-            <h1>🏠 Navarro Family Roofing LLC</h1>
-            <p>Excellence in Every Roof</p>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo-wrapper">
+                <span class="logo-icon">🏠</span>
+                <div>
+                    <h1>Navarro Roofing</h1>
+                    <p>Excellence Assured</p>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#about" class="nav-link">Why Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="nav-btn">Call Now</button>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-container">
-        <div class="hero-shapes">
-            <div class="shape shape1"></div>
-            <div class="shape shape2"></div>
-            <div class="shape shape3"></div>
-        </div>
+    <!-- HERO SECTION WITH PARTICLES -->
+    <section class="hero">
+        <canvas id="particleCanvas"></canvas>
         <div class="hero-content">
-            <h2>Professional Roofing Solutions</h2>
-            <p>Protecting your home with quality craftsmanship since day one</p>
-            <button class="btn btn-primary">Get Free Estimate</button>
+            <div class="hero-text">
+                <h2 class="hero-title">Protect Your Castle</h2>
+                <p class="hero-subtitle">Premium Roofing Solutions for Your Home</p>
+                <p class="hero-desc">Expert craftsmanship. Trusted service. 24/7 emergency support.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg">Get Free Estimate</button>
+                    <button class="btn btn-secondary btn-lg">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <span class="card-icon">⚡</span>
+                    <span>24/7 Service</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-icon">🛡️</span>
+                    <span>Guaranteed</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="card-icon">⭐</span>
+                    <span>5-Star Rated</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3 class="stat-number" data-target="500">0</h3>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="stat-number" data-target="1000">0</h3>
+            <p>Roofs Completed</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="stat-number" data-target="20">0</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="stat-number" data-target="100">0</h3>
+            <p>% Satisfaction</p>
         </div>
     </section>
 
     <!-- SERVICES SECTION -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>Comprehensive roofing solutions tailored to your needs</p>
+    <section id="services" class="services">
+        <div class="section-header">
+            <span class="section-tag">Our Services</span>
+            <h2>What We Offer</h2>
+            <p>Comprehensive solutions for all your roofing needs</p>
+        </div>
+        
         <div class="services-grid">
-            <div class="service-card">
-                <h3>🔨 Roof Installation</h3>
-                <p>Professional installation of new roofs with premium materials and expert craftsmanship.</p>
+            <div class="service-card service-card-1">
+                <div class="card-icon-bg">🔨</div>
+                <h3>Roof Installation</h3>
+                <p>Professional installation of new roofs with premium materials</p>
+                <ul>
+                    <li>Quality materials</li>
+                    <li>Expert installation</li>
+                    <li>Warranty included</li>
+                </ul>
+                <a href="#contact" class="card-link">Learn More →</a>
             </div>
-            <div class="service-card">
-                <h3>🛠️ Roof Repair</h3>
-                <p>Quick and reliable repairs to fix leaks, damage, and extend your roof's lifespan.</p>
+
+            <div class="service-card service-card-2">
+                <div class="card-icon-bg">🛠️</div>
+                <h3>Roof Repair</h3>
+                <p>Quick repairs to fix leaks and damage</p>
+                <ul>
+                    <li>Fast response</li>
+                    <li>Emergency service</li>
+                    <li>Quality fixes</li>
+                </ul>
+                <a href="#contact" class="card-link">Learn More →</a>
             </div>
-            <div class="service-card">
-                <h3>🔄 Roof Replacement</h3>
-                <p>Complete roof replacement services with quality materials and guaranteed workmanship.</p>
+
+            <div class="service-card service-card-3">
+                <div class="card-icon-bg">🔄</div>
+                <h3>Roof Replacement</h3>
+                <p>Complete replacement with quality materials</p>
+                <ul>
+                    <li>Modern materials</li>
+                    <li>Professional crew</li>
+                    <li>Guaranteed work</li>
+                </ul>
+                <a href="#contact" class="card-link">Learn More →</a>
             </div>
-            <div class="service-card">
-                <h3>🔍 Roof Inspection</h3>
-                <p>Thorough inspections to identify issues early and prevent costly damage.</p>
+
+            <div class="service-card service-card-4">
+                <div class="card-icon-bg">🔍</div>
+                <h3>Roof Inspection</h3>
+                <p>Thorough inspections to identify issues early</p>
+                <ul>
+                    <li>Detailed report</li>
+                    <li>Free estimate</li>
+                    <li>Expert analysis</li>
+                </ul>
+                <a href="#contact" class="card-link">Learn More →</a>
             </div>
-            <div class="service-card">
-                <h3>🌧️ Gutter Services</h3>
-                <p>Installation and maintenance of gutters to protect your home's foundation.</p>
+
+            <div class="service-card service-card-5">
+                <div class="card-icon-bg">🌧️</div>
+                <h3>Gutter Services</h3>
+                <p>Installation and maintenance of gutters</p>
+                <ul>
+                    <li>Proper drainage</li>
+                    <li>Foundation protection</li>
+                    <li>Regular maintenance</li>
+                </ul>
+                <a href="#contact" class="card-link">Learn More →</a>
             </div>
-            <div class="service-card">
-                <h3>⚡ Emergency Service</h3>
-                <p>24/7 emergency roofing services available for urgent situations and storm damage.</p>
+
+            <div class="service-card service-card-6">
+                <div class="card-icon-bg">⚡</div>
+                <h3>Emergency Service</h3>
+                <p>24/7 emergency roofing services available</p>
+                <ul>
+                    <li>24/7 availability</li>
+                    <li>Storm damage</li>
+                    <li>Rapid response</li>
+                </ul>
+                <a href="#contact" class="card-link">Learn More →</a>
             </div>
         </div>
     </section>
 
     <!-- GALLERY SECTION -->
-    <section id="gallery">
-        <h2>Our Work</h2>
-        <p>See our recent projects and quality workmanship</p>
+    <section id="gallery" class="gallery">
+        <div class="section-header">
+            <span class="section-tag">Our Work</span>
+            <h2>Portfolio Showcase</h2>
+            <p>See our recent projects and expert craftsmanship</p>
+        </div>
+
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="unnamed (1).jpg" alt="Roofing Project 1">
-                <div class="gallery-overlay">Residential Roof</div>
+                <img src="unnamed (1).jpg" alt="Project 1">
+                <div class="gallery-info">
+                    <h3>Residential Roof</h3>
+                    <p>Modern installation</p>
+                </div>
             </div>
             <div class="gallery-item">
-                <img src="unnamed (2).jpg" alt="Roofing Project 2">
-                <div class="gallery-overlay">Quality Work</div>
+                <img src="unnamed (2).jpg" alt="Project 2">
+                <div class="gallery-info">
+                    <h3>Shingle Roof</h3>
+                    <p>Quality workmanship</p>
+                </div>
             </div>
             <div class="gallery-item">
-                <img src="unnamed (3).jpg" alt="Roofing Project 3">
-                <div class="gallery-overlay">Professional Service</div>
+                <img src="unnamed (3).jpg" alt="Project 3">
+                <div class="gallery-info">
+                    <h3>Tile Installation</h3>
+                    <p>Premium materials</p>
+                </div>
             </div>
             <div class="gallery-item">
-                <img src="unnamed (4).jpg" alt="Roofing Project 4">
-                <div class="gallery-overlay">Expert Installation</div>
+                <img src="unnamed (4).jpg" alt="Project 4">
+                <div class="gallery-info">
+                    <h3>Commercial Roof</h3>
+                    <p>Professional service</p>
+                </div>
             </div>
             <div class="gallery-item">
-                <img src="unnamed (5).jpg" alt="Roofing Project 5">
-                <div class="gallery-overlay">Premium Materials</div>
+                <img src="unnamed (5).jpg" alt="Project 5">
+                <div class="gallery-info">
+                    <h3>Repair Work</h3>
+                    <p>Expert repairs</p>
+                </div>
             </div>
             <div class="gallery-item">
-                <img src="unnamed (6).jpg" alt="Roofing Project 6">
-                <div class="gallery-overlay">Trusted by Customers</div>
+                <img src="unnamed (6).jpg" alt="Project 6">
+                <div class="gallery-info">
+                    <h3>Inspection</h3>
+                    <p>Detailed assessment</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>Why Choose Us</h2>
-        <p>Over a decade of excellence in roofing services</p>
-        <div class="features-grid">
-            <div class="feature">
-                <h3>🏆 Quality</h3>
-                <p>Premium materials and expert installation ensure lasting results.</p>
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2>Your Trusted Partner</h2>
+            <p>Excellence in every project</p>
+        </div>
+
+        <div class="features-container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Premium Quality</h3>
+                    <p>Top-grade materials and expert installation for lasting results</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Reliable Service</h3>
+                    <p>Prompt and professional service that you can count on</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive rates with flexible payment options</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👨‍💼</div>
+                    <h3>Expert Team</h3>
+                    <p>Licensed and certified professionals with years of experience</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Full Warranty</h3>
+                    <p>Comprehensive coverage on all our work</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for your peace of mind</p>
+                </div>
             </div>
-            <div class="feature">
-                <h3>⏰ Reliability</h3>
-                <p>Prompt service and on-time project completion guaranteed.</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="section-header">
+            <span class="section-tag">What Customers Say</span>
+            <h2>Testimonials</h2>
+            <p>Real feedback from satisfied clients</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Excellent work! The team was professional and efficient. Highly recommend!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JD</div>
+                    <div>
+                        <h4>John Davis</h4>
+                        <p>Homeowner</p>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <h3>💰 Affordable</h3>
-                <p>Competitive pricing with flexible payment options available.</p>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Best roofing company in Richmond. They completed our project on time!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div>
+                        <h4>Sarah Miller</h4>
+                        <p>Property Manager</p>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <h3>👨‍💼 Experienced</h3>
-                <p>Licensed and certified professionals with years of expertise.</p>
-            </div>
-            <div class="feature">
-                <h3>🛡️ Warranty</h3>
-                <p>Comprehensive warranty coverage on all our work.</p>
-            </div>
-            <div class="feature">
-                <h3>📱 24/7 Support</h3>
-                <p>Round-the-clock customer support for your peace of mind.</p>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Outstanding customer service and quality workmanship. 10/10 would hire again!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RC</div>
+                    <div>
+                        <h4>Robert Chen</h4>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Get In Touch</h2>
-        <p>Ready to protect your home? Contact us today for a free estimate!</p>
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2>Contact Us Today</h2>
+            <p>Ready to transform your roof? Reach out now!</p>
+        </div>
 
-        <div class="contact-info">
-            <div class="info-box">
-                <h3>📍 Location</h3>
-                <p>9110 W Broad St</p>
-                <p>Richmond, VA 23294</p>
-                <p>United States</p>
+        <div class="contact-wrapper">
+            <div class="contact-info-cards">
+                <div class="contact-card glass-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>9110 W Broad St</p>
+                    <p>Richmond, VA 23294</p>
+                    <p>United States</p>
+                    <a href="https://www.google.com/maps/place/Navarro+Family+Roofing+LLC/@37.6379419,-77.5503479,17z" target="_blank" class="card-link">View on Map →</a>
+                </div>
+
+                <div class="contact-card glass-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p class="phone-display">+1 (804) 607-9500</p>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">24/7 Emergency Line</p>
+                    <button class="btn btn-outline btn-sm" onclick="callEmergency()">Call Now</button>
+                </div>
+
+                <div class="contact-card glass-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: <span>24 Hours</span></p>
+                    <p>Saturday: <span>24 Hours</span></p>
+                    <p>Sunday: <span>Closed</span></p>
+                </div>
             </div>
-            <div class="info-box">
-                <h3>📞 Phone</h3>
-                <p><a href="tel:+18046079500" class="phone-link">+1 (804) 607-9500</a></p>
-                <p style="margin-top: 0.5rem; font-size: 0.85rem;">24/7 Emergency Service</p>
-            </div>
-            <div class="info-box">
-                <h3>⏰ Business Hours</h3>
-                <p>Monday - Friday: 24 Hours</p>
-                <p>Saturday: 24 Hours</p>
-                <p>Sunday: Closed</p>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="form-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <span class="form-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        <span class="form-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+                        <span class="form-border"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
             </div>
         </div>
 
-        <!-- CONTACT FORM -->
-        <form class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe">
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="john@example.com">
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your roofing needs..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-
-        <!-- GOOGLE MAPS -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.7889123456!2d-77.5503479!3d37.6379419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b11599796a0657%3A0x66ffbb7b17822869!2s9110%20W%20Broad%20St%2C%20Richmond%2C%20VA%2023294!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- MAP -->
+        <div class="map-container glass-card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.7889123456!2d-77.5503479!3d37.6379419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b11599796a0657%3A0x66ffbb7b17822869!2s9110%20W%20Broad%20St%2C%20Richmond%2C%20VA%2023294!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
-    <!-- EMERGENCY BADGE -->
-    <div class="emergency-badge" onclick="callEmergency()">
-        <span class="pulse-dot"></span>
-        <span>24/7 CALL</span>
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-action">
+        <button class="fab fab-call" onclick="callEmergency()" title="Call Now">
+            <span>📞</span>
+            <span class="fab-label">Call</span>
+        </button>
+        <button class="fab fab-whatsapp" title="WhatsApp">
+            <span>💬</span>
+            <span class="fab-label">Chat</span>
+        </button>
     </div>
 
     <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Navarro Family Roofing LLC. All Rights Reserved. | Licensed & Insured</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navarro Roofing</h4>
+                <p>Professional roofing services with excellence guaranteed.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Richmond, VA</p>
+                <p>📞 +1 (804) 607-9500</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Navarro Family Roofing LLC. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
